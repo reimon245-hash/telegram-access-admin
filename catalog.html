@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Полный список квартир — Екатеринбург</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html" aria-label="На главную">
+        <img src="assets/label-logo.svg" alt="Лого компании" />
+      </a>
+      <a class="phone" href="tel:+73432000000">+7 (343) 200-00-00</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container">
+        <p class="eyebrow">Каталог квартир</p>
+        <h1>Подберите вариант из полного списка квартир</h1>
+        <p class="lead">Если хотите начать с фильтров по датам и параметрам — вернитесь на страницу с поисковой формой.</p>
+        <a class="cta-button" href="index.html">Искать по критериям</a>
+      </div>
+    </section>
+
+    <section class="section widget-section">
+      <div class="container">
+        <h2>Модуль бронирования</h2>
+        <div class="widget-shell">
+          <div id="hr-widget"></div>
+          <script type="module" src="https://homereserve.ru/widget.js"></script>
+          <script type="module">
+            window.homereserve.initWidgetList({"token":"epKu6jviXS","tag":"Виджет список квартир"});
+          </script>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
